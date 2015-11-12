@@ -1,4 +1,4 @@
- 
+
 // if("Bob"==="Joe"){
 // 	 return "Hello";
 
@@ -14,11 +14,17 @@
 
 // });
 test("takes a username as parameter and returns Hello",function(assert){
-	assert.equal(hello_uppercase("ALATHA"),"Hello, ALATHA");
+	assert.equal(hello_uppercase("alatha"),"Hello, ALATHA");
 });
 
 
-test("test that it return helloworld",function(assert){
+test("test that it returns helloworld",function(assert){
  	assert.equal(helloWorld(),"hello world");
 
  });
+test("takes a username as parameter and returns Hello if the username is Bob only say hello",function(assert){
+	assert.equal(hello_joe("Joe"),"Hello!");
+	assert.equal(hello_joe("Bob"),"Hello!");
+	assert.equal(hello_joe("Nana"),"Hello, Nana!");
+});
+
