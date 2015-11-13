@@ -1,9 +1,9 @@
 function number_list(n){
-	var number = [];
+	var numbers = [];
 	for (var i =1; i <= n; i++) {
-		number.push(i);
+		numbers.push(i);
 	}
-	return number;
+	return numbers;
 };
 
 
