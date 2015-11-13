@@ -27,4 +27,7 @@ test("takes a username as parameter and returns Hello if the username is Bob onl
 	assert.equal(hello_joe("Bob"),"Hello!");
 	assert.equal(hello_joe("Nana"),"Hello, Nana!");
 });
+test("takes a number as a parameter (n) and returns a list of numbers from 1 to n",function(assert){
+	assert.deepEqual(number_list(10),[1,2,3,4,5,6,7,8,9,10]);
+});
 
