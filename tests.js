@@ -31,3 +31,6 @@ test("takes a number as a parameter (n) and returns a list of numbers from 1 to 
 	assert.deepEqual(number_list(10),[1,2,3,4,5,6,7,8,9,10]);
 });
 
+test("takes a number as a parameter (n) and returns the sum of numbers from 1 to n",function(assert){
+	assert.deepEqual(sum_numbers(5),15);
+});
