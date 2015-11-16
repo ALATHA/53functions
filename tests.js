@@ -34,3 +34,6 @@ test("takes a number as a parameter (n) and returns a list of numbers from 1 to 
 test("takes a number as a parameter (n) and returns the sum of numbers from 1 to n",function(assert){
 	assert.deepEqual(sum_numbers(5),15);
 });
+test("takes a string parameter and returns the length of the supplied parameter",function(assert){
+	assert.equal(length("nana"), 4);
+});
