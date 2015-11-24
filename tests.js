@@ -37,3 +37,24 @@ test("takes a number as a parameter (n) and returns the sum of numbers from 1 to
 test("takes a string parameter and returns the length of the supplied parameter",function(assert){
 	assert.equal(length("nana"), 4);
 });
+test("takes a string parameter and returns the supplied parameter in uppercase",function(assert){
+	assert.equal(upper("nana"),"NANA");
+});
+test("takes a string parameter and returns the reversed string parameter",function(assert){
+	assert.equal(reverse("nana"),"anan");
+});
+ test("takes a number as parameter  and returns a list of hello world entries equal to the number supplied",function(assert){ 	
+ 	assert.equal(Array("hello world"),"hello world");
+});
+ test("given a list of numbers returns the highest and lowest numbers in the list",function(assert){
+ 	assert.equal(high_low([1,2,3,4,5,6,7,8,9,10],10,1));
+ });
+ test("takes a sentence as a parameter and returns the number of words in the sentence",function(assert){
+ 	assert.equal(count_words("I love Alatha"),13);
+ });
+ test("takes a sentence as a parameter and returns the sum of the length of words in the sentence",function(assert){
+ 	assert.equal(sum_word_len("nana loves alatha"),17);
+ });
+ test("takes a sentence as a parameter and returns the longest word in the sentence and the length of the word",function(assert){
+	assert.equal(longest_word("alatha and nana"),6);
+});
